@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Possibility.module.css";
-import possibilityImage from "/public/assets/possibility.png";
+import possibilityImage from "/public/assets/possibility-img.png";
 
 const Possibility = () => {
   return (
