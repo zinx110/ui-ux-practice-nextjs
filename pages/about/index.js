@@ -1,4 +1,4 @@
-import WHATGPT3 from "../../components/gpt3/gpt3";
+import WHATGPT3 from "../../components/Gpt3/Gpt3";
 import Possibility from "../../components/Possibility/Possibility";
 
 const index = () => {

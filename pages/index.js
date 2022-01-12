@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar/Navbar";
+
 import Header from "../components/Header/Header";
 import Brand from "../components/Brand/Brand";
 import EarlyAccess from "../components/EarlyAccess/EarlyAccess";
 import CTA from "../components/CTA/CTA";
-import Possibility from "../components/Possibility/Possibility";
+
 import VRSection from "../components/VRSection/VRSection";
 
 export default function Home() {
