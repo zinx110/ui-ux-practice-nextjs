@@ -3,23 +3,24 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "/public/assets/logo.svg";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <Link href="/">
+        <a>Home</a>
+      </Link>
     </p>
     <p>
-      <a href="#whatgpt3">What is GPT3</a>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
     </p>
     <p>
-      <a href="#features">Case Studies</a>
-    </p>
-    <p>
-      <a href="#possibility">Open AI</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
+      <Link href="/library">
+        <a>Library</a>
+      </Link>
     </p>
   </>
 );
@@ -31,9 +32,13 @@ const Navbar = () => {
     <div className={styles.gpt3_navbar}>
       <div className={styles.gpt3_navbar_links}>
         <div className={styles.gpt3_navbar_links_logo}>
-          <div className={styles.img}>
-            <Image src={logo} alt="logo" layout="responsive" />
-          </div>
+          <Link href="/">
+            <a>
+              <div className={styles.img}>
+                <Image src={logo} alt="logo" layout="responsive" />
+              </div>
+            </a>
+          </Link>
         </div>
         <div className={styles.gpt3_navbar_links_container}>
           <Menu />

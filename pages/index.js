@@ -2,14 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar/Navbar";
-import Header from "../components/Container/Header/Header";
+import Header from "../components/Header/Header";
 import Brand from "../components/Brand/Brand";
-import WHATGPT3 from "../components/Container/WHATGPT3/WHATGPT3";
-import Features from "../components/Container/Features/Features";
-import Possibility from "../components/Container/Possibility/Possibility";
+import EarlyAccess from "../components/EarlyAccess/EarlyAccess";
 import CTA from "../components/CTA/CTA";
-import Blog from "../components/Container/Blog/Blog";
-import Footer from "../components/Container/Footer/Footer";
+import Possibility from "../components/Possibility/Possibility";
+import VRSection from "../components/VRSection/VRSection";
 
 export default function Home() {
   return (
@@ -20,17 +18,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.gradient_bg}>
-        <Navbar />
         <Header />
       </div>
-      <Brand />
-      <WHATGPT3 />
-      <Features />
-      <Possibility />
+
       <CTA />
-      <Blog />
-      <Footer />
-      <main>GPT-3</main>
+      <VRSection />
+      <EarlyAccess />
+      <Brand />
     </div>
   );
 }
